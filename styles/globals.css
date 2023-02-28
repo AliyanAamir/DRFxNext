@@ -72,7 +72,10 @@
     --card-border-rgb: 200, 200, 200;
   }
 }
-
+@font-face {
+  font-family: "ROAM";
+  src: url(../public/Fonts/KSRoam.ttf) format("truetype");
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -80,6 +83,11 @@
 }
 
 html,
+
+.font-ksroam {
+  font-family: "ROAM";
+}
+
 body {
   max-width: 100vw;
   overflow-x: hidden;
@@ -105,3 +113,34 @@ a {
     color-scheme: dark;
   }
 }
+
+.rotate-5 {
+  transform: rotate(-5deg);
+}
+
+
+  
+
+
+  .navbar{
+
+
+    font-size: 2rem;
+    display:flex;
+    justify-content: space-between;
+  }
+
+  input.placeholderchange::-webkit-input-placeholder {
+    color: rgba(44, 43, 43, 0.295);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.content {
+  padding-bottom: 64px; /* set to the height of your footer */
+}
+
