@@ -5,16 +5,16 @@ import Searchbar from "./Searchbar";
 const Navbar = () => {
   
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary ">
-      <div className="container-fluid ">
+    <nav className="navbar navbar-expand-lg">
+      <div className="container-fluid ms-5">
         <Link
           className="navbar-brand font-ksroam"
           href="/"
-          style={{ fontSize: "3rem", marginLeft: "30px" }}
+          style={{ fontSize: "3rem"}}
         >
           CRYPTAPRINT
         </Link>
-        <div>
+        <div className="me-5">
           <button
             className="navbar-toggler "
             type="button"
@@ -24,10 +24,10 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            className="collapse navbar-collapse gap-5 "
+            className="collapse navbar-collapse gap-5"
             id="navbarNavDropdown"
           >
             <ul className="navbar-nav gap-3 h2 ">
@@ -41,66 +41,61 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link font-ksroam hover-underline-animation" href="/shop">
+                <Link className="nav-link font-ksroam hover-underline-animation" href="/products">
                   SHOP
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link font-ksroam hover-underline-animation" href="/">
+                <Link className="nav-link font-ksroam hover-underline-animation" href="/">
                   OFFICIAL MERCH
-                </a>
+                </Link>
               </li>
             </ul>
             <Searchbar />
-          </div>
-        </div>
-        <div className="d-flex gap-4">
+            <div className="d-flex gap-4">
         <div>
             <Link href="/order">
             <img
-              src="./Icons/portfolio.png"
+              src="/Icons/portfolio.png"
               style={{ height: "30px", width: "30px", cursor: "pointer" }}
             />
             </Link>
             
           </div>
-          <Link href="/cart">
-          <p style={{position:'absolute', color:'white',fontSize:"17px", marginLeft:'7px',marginTop:'17px',fontWeight:'bold'}}>0</p>
-            <img
-              src="./Icons/circle.png"
-              style={{ height: "25px", width: "25px", cursor: "pointer" }}
-            >
-              
-            </img>
+          <Link href="/cart" style={{textDecoration:'none'}}>
+          <div className="circle" style={{marginTop:'10px'}}>0</div>
           </Link>
           
         </div>
         <div className="d-flex flex-row gap-3 " style={{ marginRight: "30px" }}>
           <a href="https://www.instagram.com/cryptaprint/" target="_blank">
             <img
-              src="./Icons/instagram.png"
+              src="/Icons/instagram.png"
               style={{ height: "40px", width: "40px" }}
             />
           </a>
           <a href="https://discord.gg/3v4SHKve" target="_blank">
             <img
-              src="./Icons/discord.png"
+              src="/Icons/discord.png"
               style={{ height: "40px", width: "40px" }}
             />
           </a>
           <a href="https://www.tiktok.com/@cryptaprint" target="_blank">
             <img
-              src="./Icons/tiktok.png"
+              src="/Icons/tiktok.png"
               style={{ height: "40px", width: "40px" }}
             />
           </a>
           <a href="https://twitter.com/CryptaPrint" target="_blank">
             <img
-              src="./Icons/twitter.png"
+              src="/Icons/twitter.png"
               style={{ height: "40px", width: "40px" }}
             />
           </a>
         </div>
+          </div>
+        </div>
+        
       </div>
     </nav>
   );

@@ -1,6 +1,7 @@
 import React from "react";
-import styled from "styled-components";
+
 import HowItWorks from "../HowItWorks/HowItWorks";
+import { Swag } from "../Swag/components/Swag";
 
 const Landingpage = () => {
   return (
@@ -11,6 +12,9 @@ const Landingpage = () => {
       </div>
       <div className="p-5">
         <HowItWorks />
+      </div>
+      <div>
+        <Swag/>
       </div>
     </div>
   );
